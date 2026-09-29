@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Product - TechBazaar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Tech<span>Bazaar</span></div>
+    <a href="index.html" class="home-btn">Home</a>
+</header>
+
+<section class="sell-section">
+
+    <h1>Sell Your Product</h1>
+    <p>Enter your product details below</p>
+
+    <form id="sellForm">
+
+        <label>Product Name</label>
+        <input type="text" id="productName" placeholder="e.g. iPhone 13" required>
+
+        <label>Category</label>
+        <select id="category" required>
+            <option value="">Select Category</option>
+            <option>Mobile Phones</option>
+            <option>Chargers</option>
+            <option>Earphones</option>
+            <option>Power Banks</option>
+            <option>Smart Watches</option>
+            <option>Accessories</option>
+        </select>
+
+        <label>Price (₹)</label>
+        <input type="number" id="price" placeholder="Enter price" required>
+
+        <label>Condition</label>
+        <select id="condition" required>
+            <option value="">Select Condition</option>
+            <option>Brand New</option>
+            <option>Like New</option>
+            <option>Good Condition</option>
+            <option>Used</option>
+        </select>
+
+        <label>Location</label>
+        <input type="text" id="location" placeholder="e.g. Mumbai" required>
+
+        <label>Description</label>
+        <textarea id="description" placeholder="Describe your product..." required></textarea>
+
+        <label>Product Image</label>
+        <input type="file" id="image" accept="image/*">
+
+        <button type="submit">Post Product</button>
+
+    </form>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechBazaar - Buy & Sell Electronics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Tech<span>Bazaar</span></div>
+
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search mobiles, chargers, accessories...">
+            <button onclick="searchProducts()">Search</button>
+        </div>
+
+        <a href="sell.html" class="sell-btn">+ Sell Product</a>
+    </header>
+
+    <nav>
+    <a href="index.html">Home</a>
+    <a href="#products">Products</a>
+    <a href="#products" onclick="filterCategory('Mobile Phones')">Mobiles</a>
+    <a href="#products" onclick="filterCategory('Chargers')">Chargers</a>
+    <a href="#products" onclick="filterCategory('Accessories')">Accessories</a>
+</nav>
+
+    <section class="hero">
+        <div>
+            <h1>Buy & Sell Electronics Easily</h1>
+            <p>Find mobiles, chargers and accessories at the best prices.</p>
+            <button class="browse-btn">Browse Products</button>
+        </div>
+    </section>
+
+    <section class="categories">
+        <h2>Browse Categories</h2>
+
+        <div class="category-list">
+            <div class="category">📱<p>Mobile Phones</p></div>
+            <div class="category">🔌<p>Chargers</p></div>
+            <div class="category">🎧<p>Earphones</p></div>
+            <div class="category">🔋<p>Power Banks</p></div>
+            <div class="category">⌚<p>Smart Watches</p></div>
+            <div class="category">📱<p>Accessories</p></div>
+        </div>
+    </section>
+
+    <section class="products" id="products">
+        <div class="section-title">
+            <h2>Latest Products</h2>
+        </div>
+
+        <div class="product-grid" id="productGrid">
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=500" alt="Mobile">
+                <div class="product-info">
+                    <h3>iPhone 13</h3>
+                    <h2>₹32,000</h2>
+                    <p>Good Condition</p>
+                    <p>📍 Mumbai</p>
+                    <button>View Details</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1587033411391-5d9e51cce126?w=500" alt="Charger">
+                <div class="product-info">
+                    <h3>65W Fast Charger</h3>
+                    <h2>₹999</h2>
+                    <p>Brand New</p>
+                    <p>📍 Thane</p>
+                    <button>View Details</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?w=500" alt="Earphones">
+                <div class="product-info">
+                    <h3>Wireless Earbuds</h3>
+                    <h2>₹1,499</h2>
+                    <p>Like New</p>
+                    <p>📍 Mumbai</p>
+                    <button>View Details</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1609592424834-7b1c3a6d3a77?w=500" alt="Power Bank">
+                <div class="product-info">
+                    <h3>20,000mAh Power Bank</h3>
+                    <h2>₹1,200</h2>
+                    <p>Good Condition</p>
+                    <p>📍 Navi Mumbai</p>
+                    <button>View Details</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <h3>TechBazaar</h3>
+        <p>Buy & Sell Mobile Phones and Accessories</p>
+        <p>© 2026 TechBazaar</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

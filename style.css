@@ -1,0 +1,542 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f5f6f8;
+    color: #222;
+}
+
+/* ===============================
+   HEADER
+================================ */
+
+header {
+    height: 75px;
+    background: white;
+    display: flex;
+    align-items: center;
+    padding: 0 7%;
+    gap: 30px;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #1769aa;
+}
+
+.logo span {
+    color: #ff7a00;
+}
+
+.search-box {
+    flex: 1;
+    display: flex;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 6px 0 0 6px;
+    font-size: 15px;
+}
+
+.search-box button {
+    padding: 13px 22px;
+    border: none;
+    background: #1769aa;
+    color: white;
+    cursor: pointer;
+}
+
+.sell-btn {
+    background: #ff7a00;
+    color: white;
+    border: none;
+    padding: 13px 22px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* ===============================
+   NAVIGATION
+================================ */
+
+nav {
+    background: white;
+    padding: 15px 7%;
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav a:hover {
+    color: #1769aa;
+}
+
+/* ===============================
+   HERO
+================================ */
+
+.hero {
+    margin: 25px 7%;
+    min-height: 280px;
+    background: linear-gradient(120deg, #1769aa, #2296d2);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.browse-btn {
+    padding: 13px 25px;
+    border: none;
+    border-radius: 6px;
+    background: white;
+    color: #1769aa;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ===============================
+   CATEGORIES
+================================ */
+
+.categories,
+.products {
+    margin: 40px 7%;
+}
+
+.categories h2,
+.products h2 {
+    margin-bottom: 20px;
+}
+
+.category-list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 15px;
+}
+
+.category {
+    background: white;
+    padding: 25px 10px;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 30px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.category:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.category p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* ===============================
+   PRODUCTS
+================================ */
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.product-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    transition: 0.2s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.product-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    background: #f3f3f3;
+}
+
+.product-info {
+    padding: 15px;
+}
+
+.product-info h3 {
+    margin-bottom: 10px;
+}
+
+.product-info h2 {
+    color: #1769aa;
+    margin-bottom: 8px;
+}
+
+.product-info p {
+    color: #666;
+    margin: 6px 0;
+}
+
+.product-info button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #1769aa;
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.product-info button:hover {
+    background: #0f568c;
+}
+
+/* ===============================
+   FOOTER
+================================ */
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+footer p {
+    margin-top: 8px;
+    color: #bbb;
+}
+
+/* ===============================
+   SELL PRODUCT PAGE
+================================ */
+
+.home-btn {
+    margin-left: auto;
+    text-decoration: none;
+    background: #1769aa;
+    color: white;
+    padding: 11px 22px;
+    border-radius: 6px;
+}
+
+.sell-section {
+    width: 600px;
+    max-width: 90%;
+    margin: 45px auto;
+    background: white;
+    padding: 35px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+}
+
+.sell-section h1 {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.sell-section > p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+#sellForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#sellForm label {
+    margin-top: 15px;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+#sellForm input,
+#sellForm select,
+#sellForm textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+#sellForm textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+#sellForm button {
+    margin-top: 25px;
+    padding: 13px;
+    background: #ff7a00;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#sellForm button:hover {
+    background: #e96d00;
+}
+
+/* ===============================
+   PRODUCT DETAILS
+================================ */
+
+.product-details {
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+    background: white;
+    padding: 35px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+}
+
+.product-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+    background: #f5f5f5;
+    border-radius: 10px;
+}
+
+.product-content h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.product-content h2 {
+    color: #1769aa;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.product-content p {
+    margin: 14px 0;
+    color: #555;
+    font-size: 16px;
+}
+
+.product-content hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 25px 0;
+}
+
+.product-content h3 {
+    margin-bottom: 10px;
+}
+
+/* ===============================
+   CHAT BUTTON
+================================ */
+
+.contact-btn {
+    width: 100%;
+    padding: 14px;
+    margin-top: 25px;
+    background: #ff7a00;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-btn:hover {
+    background: #e96d00;
+}
+
+/* ===============================
+   CHAT BOX
+================================ */
+
+.chat-box {
+    display: none;
+    width: 100%;
+    margin-top: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    background: white;
+}
+
+.chat-header {
+    background: #1769aa;
+    color: white;
+    padding: 14px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+.chat-header button {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0;
+}
+
+.chat-messages {
+    height: 180px;
+    padding: 15px;
+    overflow-y: auto;
+    background: #fafafa;
+}
+
+.seller-message,
+.user-message {
+    padding: 9px 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    max-width: 75%;
+}
+
+.seller-message {
+    background: #e9e9e9;
+}
+
+.user-message {
+    background: #1769aa;
+    color: white;
+    margin-left: auto;
+}
+
+.chat-input {
+    display: flex;
+    border-top: 1px solid #ddd;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.chat-input button {
+    padding: 12px 20px;
+    border: none;
+    background: #ff7a00;
+    color: white;
+    cursor: pointer;
+}
+
+.chat-input button:hover {
+    background: #e96d00;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 900px) {
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .category-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    .product-details {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+
+    header {
+        height: auto;
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .search-box {
+        width: 100%;
+    }
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .category-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero {
+        padding: 30px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .product-details {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .product-image img {
+        height: 300px;
+    }
+}

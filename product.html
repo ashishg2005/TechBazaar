@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - TechBazaar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Tech<span>Bazaar</span></div>
+
+    <a href="index.html" class="home-btn">Home</a>
+</header>
+
+<section class="product-details">
+
+    <div class="product-image">
+        <img id="detailImage" src="" alt="Product">
+    </div>
+
+    <div class="product-content">
+
+        <h1 id="detailName">Product Name</h1>
+
+        <h2 id="detailPrice">₹0</h2>
+
+        <p>
+            <strong>Category:</strong>
+            <span id="detailCategory"></span>
+        </p>
+
+        <p>
+            <strong>Condition:</strong>
+            <span id="detailCondition"></span>
+        </p>
+
+        <p>
+            <strong>Location:</strong> 📍
+            <span id="detailLocation"></span>
+        </p>
+
+        <hr>
+
+        <h3>Description</h3>
+
+        <p id="detailDescription"></p>
+
+        <!-- Chat Button -->
+        <button class="contact-btn" onclick="openChat()">
+            💬 Chat with Seller
+        </button>
+
+        <!-- Chat Box -->
+        <div id="chatBox" class="chat-box">
+
+            <div class="chat-header">
+                <span>💬 Chat with Seller</span>
+
+                <button onclick="closeChat()">×</button>
+            </div>
+
+            <div id="chatMessages" class="chat-messages">
+
+                <div class="seller-message">
+                    Hello! Is the product still available?
+                </div>
+
+            </div>
+
+            <div class="chat-input">
+
+                <input
+                    type="text"
+                    id="messageInput"
+                    placeholder="Type your message..."
+                >
+
+                <button onclick="sendMessage()">
+                    Send
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
